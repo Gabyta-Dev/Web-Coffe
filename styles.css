@@ -1,0 +1,16 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	background-color: black;
+	color: white;
+	font-family:cursive;
+	letter-spacing: 2px;
+}
+a{
+	color:rgb(208, 79, 195);
+	padding: 10px;
+}
+h3{
+	color:rgb(208, 79, 195);
+}
