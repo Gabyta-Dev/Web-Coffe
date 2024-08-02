@@ -1,16 +1,164 @@
-*{
-	box-sizing: border-box;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-body{
-	background-color: black;
-	color: white;
-	font-family:cursive;
-	letter-spacing: 2px;
+body {
+  background-color: black;
 }
-a{
-	color:rgb(208, 79, 195);
+.container-header-div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+/***NAVBAR REDES*********************/
+.navbar-redes {
+  display: flex;
+  justify-content: end;
+}
+.navbar-redes ul li {
+  margin: 10px;
+}
+
+header {
+  background-image: url("./img/KHC_HTB_french_press_hero_3600x2000_1.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+nav ul {
+  display: flex;
+}
+nav li {
+  list-style: none;
+  padding: 10px;
+}
+nav li a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: rgb(238, 236, 236);
+  padding: 10px;
+}
+a:hover {
+  color: rgb(100, 70, 7);
+}
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 50vh;
+  font-size: 5rem;
+  text-align: center;
+  margin: 1.25rem;
+  padding: 1.875rem;
+  color: rgb(255, 255, 255);
+  letter-spacing: 5px;
+}
+/***CONTENIDO PRINCIPAL*************/
+main {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin: 60px;
+}
+main p {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+main h2 {
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  letter-spacing: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 30px;
+}
+/**GALERIA DE PRODUCTOS**********/
+.container-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.container-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  border: 1px solid rgba(183, 218, 240, 0.616);
+  padding: 3rem;
+}
+.container-box p {
+  padding: 0.5rem;
+}
+/***BOX PRODUCTO*********/
+.box-product {
+  display: flex;
+  justify-content: center;
+}
+img {
+  width: 6.25rem;
+}
+img:hover {
+  transform: scale(1.1);
+}
+/***CONTAINER ARTICLE**************/
+.container-article{
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	background-color: aliceblue;
+	padding: 10rem;
+}
+.container-article p{
+	color: rgb(0, 0, 0);
+}
+input{
+	padding: 1rem;
+	border: none;
+	border-bottom: 1px solid rgb(0, 0, 0);
+	background: transparent;
+}
+/***BOTON DE COMPRAR*********/
+button {
+  background-color: rgba(183, 218, 240, 0.616);
+  border: none;
+  padding: 1rem;
+}
+button,
+p {
+  color: rgb(255, 255, 255);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+button:hover {
+  transform: scale(1.1);
+}
+/***FOOTER************/
+.container-footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 18.75rem;
+  align-items: center;
+}
+.footer-box ul li > a {
+  color: rgb(255, 255, 255);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+.footer-box ul li {
+  list-style: none;
+}
+.box-tittle {
+  padding: 10px 0;
+  font-size: 25px;
+}
+h5{
+	text-align: center;
+	color: aliceblue;
 	padding: 10px;
-}
-h3{
-	color:rgb(208, 79, 195);
 }
