@@ -3,33 +3,37 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--LINK DE FONTAWESOME-->
+    <script src="https://kit.fontawesome.com/05f55949f4.js" crossorigin="anonymous"></script>
 	<!--LINK DE CSS-->
 	<link rel="stylesheet" href="styles.css">
 	<title>Desafio Latam-coffe</title>
 </head>
 <body>
-	<div class="navbar-redes">
-		<nav>
-			<img src="./img/Logo_Update.webp" alt="logo" width="100px">
-			<ul>
-				<li><a href="#">Facebook</a></li>
-				<li><a href="#">Instagram</a></li>
-			</ul>
-		</nav>
-	</div>
-	<header class="container-header-div">
-		<nav>
-			<ul>
-				<li><a href="#">HOME</a></li>
-				<li><a href="#">PRODUCT</a></li>
-				<li><a href="#">COFFE</a></li>
-			</ul>
-		</nav>
-		<div >
+	<div class="navbar">
+		<header>
+			<div class="container">
+				<a href="#" class="logo"><img src="./img/Logo_Update.webp" alt="logo" width="80px"></a>
+				<nav class="navbar">
+					<div class="navbar-container">
+						<input type="checkbox" id="menuToggle" class="menu-toggle">
+						<label for="menuToggle" class="menu-icon">☰</label>
+						<ul class="nav-menu">
+							<li><a href="#">HOME</a></li>
+							<li><a href="#">ABOUT</a></li>
+							<li><a href="#">COFFE</a></li>
+						</ul>
+					</div>
+				</nav>
+		</header>
+		</div>
+		<div class="titulo">
 			<h1> This coffee
 				kicks ass </h1>
 		</div>
-	</header>
+	</div >
+			
+		
 	<!--CONTAINER SECTION-->
 	<main>
 		<article>
@@ -157,6 +161,7 @@
 		</div>
 		<h5>© 2024, Gabriela Vega</h5>
 	</footer>
+	
 </body>
 
 </html>
