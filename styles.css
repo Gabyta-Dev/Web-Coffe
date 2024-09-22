@@ -24,6 +24,9 @@ header {
   align-items: center;
   justify-items: center;
 }
+.grid-nav:hover {
+  background-color: black;
+}
 /***MENU DE NAVEGACION***********/
 .grid-navegation {
   grid-area: grid-navegation;
@@ -35,7 +38,7 @@ header {
 
 .navbar-container {
   display: flex;
-  align-items: center;
+  flex-direction: column;
 }
 
 .menu-toggle {
@@ -71,6 +74,7 @@ header {
 }
 .nav-menu li a:hover {
   color: rgba(183, 218, 240, 0.616);
+  border-bottom: 1px solid #fff;
 }
 
 .menu-toggle:checked + .menu-icon + .nav-menu {
@@ -79,6 +83,9 @@ header {
 /****LOGO*************************************/
 .grid-logo {
   grid-area: grid-logo;
+}
+.logo {
+  background-color: transparent;
 }
 
 /*****ICONOS CARRITOS DE COMPRAS - LOGIN - IDIOMA**************/
@@ -97,31 +104,36 @@ header {
   color: #fff;
   text-decoration: none;
 }
-.nav-menu-icons li a:hover {
-  color: rgba(183, 218, 240, 0.616);
-}
+
 /**MEDIA QUERY HEADER -NAV *****************/
 @media (max-width: 768px) {
   header {
     background-position: 70%;
   }
+
   .grid-nav:hover {
     background-color: black;
+
   }
+  /***MENU DESPLEGABLE********************/
   .menu-icon {
     display: block;
   }
-
   .nav-menu {
-    display: flex;
-    flex-direction: column;
+    height: 100vh;
+    top:0;
+    left: 0;
+    display: none;
+  }
+  .menu-toggle:checked + .menu-icon + .nav-menu {
+    display: block;
   }
   .nav-menu a {
     font-size: 10px;
-    padding: 5px;
+    padding: 50px 0 0;
     letter-spacing: 2px;
+    width:100px;
   }
-
   .nav-menu li {
     margin: 0;
   }
@@ -130,10 +142,12 @@ header {
     padding: 0;
   }
 }
+
 /***PARA QUE EL MENU SE VEA COMPLETO********/
 @media (min-width: 769px) {
   .nav-menu {
     display: flex;
+    flex-direction: row;
     max-height: none;
   }
 
