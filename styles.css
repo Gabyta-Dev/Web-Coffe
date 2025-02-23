@@ -4,7 +4,7 @@
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 body {
-  background-color: black;
+  background-color:#111114;
 }
 
 /******HEADER**********************/
@@ -25,7 +25,7 @@ header {
   justify-items: center;
 }
 .grid-nav:hover {
-  background-color: black;
+  background-color:#111114;
 }
 /***MENU DE NAVEGACION***********/
 .grid-navegation {
@@ -157,12 +157,13 @@ header {
 }
 /**TITULO PRINCIPAL**********/
 .titulo {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 3rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: lighter;
+  font-size: 2rem;
   text-align: center;
   padding: 1.875rem;
   color: rgb(255, 255, 255);
-  letter-spacing: 5px;
+  letter-spacing:6px;
 }
 @media (max-width: 768px) {
   .titulo {
@@ -179,7 +180,8 @@ main {
 main p {
   color: rgb(255, 255, 255);
   font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  letter-spacing:4px;
   text-align: center;
 }
 main h2 {
@@ -240,7 +242,7 @@ input {
 }
 /***BOTON DE COMPRAR*********/
 button {
-  background-color: rgba(183, 218, 240, 0.616);
+  background-color: rgba(85, 97, 105, 0.616);
   border: none;
   padding: 1rem;
 }
@@ -307,7 +309,7 @@ section h2 {
 }
 .footer-box ul li > a {
   color: rgb(255, 255, 255);
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family:Georgia, 'Times New Roman', Times, serif;
   text-decoration: none;
   letter-spacing: 3px;
   font-weight: bold;
@@ -331,17 +333,4 @@ h5 {
     justify-items: start;
     align-items: center;
   }
-}
-/***DIV FLOTANTE*************/
-.div-flotante {
-  display: flex;
-  flex-direction: column;
-}
-.div-flotante-icone {
-  right: 0;
-  background-color: #fff;
-}
-.fa-solid {
-  padding: 5px;
-  color: aqua;
 }
